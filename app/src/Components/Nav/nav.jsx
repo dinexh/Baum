@@ -11,15 +11,19 @@ const Nav = () => {
                     </div>
                 </div>
                 <div className="nav-in-two">
-                    <p>Link</p>
-                    <p>Link</p>
-                    <p>Link</p>
-                    <p>Link</p>
-                    <p>Link</p>
-                    <p>Link</p>
+                    <p>Mission</p>
+                    <p>Objectives</p>
+                    <p>Activties</p>
+                    <p>Achievments</p>
+                    <p>Latest</p>
                 </div>
                 <div className="nav-in-three">
-                    
+                    <button>
+                        Denote
+                    </button>
+                    <button>
+                        Join Us
+                    </button>
                 </div>
             </div>
         </nav>

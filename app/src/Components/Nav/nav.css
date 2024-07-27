@@ -1,5 +1,5 @@
 nav{
-    background-color: red;
+    /* background-color: red; */
     /* padding: 1rem; */
     width: 100%;
     display: flex;
@@ -7,15 +7,15 @@ nav{
     align-items: center;
 }
 .nav-in{
-    width: 100%;
-    padding: 1rem;
+    width: 70%;
+    /* padding: 1rem; */
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .nav-in-one{
-    margin: 0.3rem;
-    /* padding: 0.3rem; */
+    margin-left: 1rem;
+    /* padding: 1rem; */
     width: 10%;
     display: flex;
     justify-content: center;
@@ -28,7 +28,27 @@ nav{
     align-items: center;
 }
 .TreeImage{
-    /* height: 100%; */
-    /* width: 30%; */
     height: 5vh;
+}
+.nav-in-two{
+    /* width: 50%; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+.nav-in-three{
+    width: 20%;
+    /* border: 2px solid red; */
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-in-three button{
+    padding: 0.5rem;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    border: transparent;
 }
