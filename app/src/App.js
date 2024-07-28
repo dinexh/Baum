@@ -1,10 +1,10 @@
 import './App.css';
-import Nav  from './Components/Nav/nav';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Contact from './Components/Contact/Contact';
 import Footer from './Components/Footer/footer';
 function App() {
   return (
     <div className="App">
+      <Contact/>
      <Footer/>
     </div>
   );
