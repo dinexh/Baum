@@ -1,0 +1,49 @@
+.home{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(https://content.presspage.com/uploads/2170/1920_gettyimages-1329369484.jpg?10000);
+    background-size: cover;
+    position: relative;
+}
+.home-in{
+    /* top: 50%; */
+    /* background-color: red; */
+    padding: 2rem;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home-in img{
+    /* width: 100%; */
+    height: 20vh;
+}
+.home-in-text{
+    /* width: 40%; */
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+.home-in-button{
+    padding: 1rem;
+    margin: 1rem;
+}
+.home-in-button-in{
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.home-in-button-in:hover{
+    background-color: green;
+}
