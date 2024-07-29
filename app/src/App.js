@@ -29,7 +29,7 @@ function App() {
         <div className="App">
             {showNav && <Nav />}
             <Hero />
-            <Mission />
+            {/* <Mission /> */}
             <Contact />
             <Footer />
         </div>
