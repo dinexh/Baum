@@ -1,7 +1,10 @@
-import Tree from "../../Assets/tree.png";
-import "./nav.css";
+import React from 'react';
+import Tree from '../../Assets/tree.png';
+import './nav.css';
+
 const Nav = () => {
-    return (  
+    return (
+        <header>
         <nav>
             <div className="nav-in">
                 <div className="nav-in-one">
@@ -13,13 +16,13 @@ const Nav = () => {
                 <div className="nav-in-two">
                     <p>Mission</p>
                     <p>Objectives</p>
-                    <p>Activties</p>
-                    <p>Achievments</p>
+                    <p>Activities</p>
+                    <p>Achievements</p>
                     <p>Latest</p>
                 </div>
                 <div className="nav-in-three">
                     <button>
-                        Denote
+                        Donate
                     </button>
                     <button>
                         Join Us
@@ -27,7 +30,8 @@ const Nav = () => {
                 </div>
             </div>
         </nav>
+    </header>
     );
-}
- 
+};
+
 export default Nav;

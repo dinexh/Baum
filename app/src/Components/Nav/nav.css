@@ -1,54 +1,77 @@
-nav{
-    /* background-color: red; */
-    /* padding: 1rem; */
+header{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.nav-in{
-    width: 70%;
+nav {
+    margin: 1rem;
+    position: fixed;
+    top: 0;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* padding: 1rem; */
+    border-radius: 40px;
+}
+
+.nav-in {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.nav-in-one{
-    margin-left: 1rem;
-    /* padding: 1rem; */
-    width: 10%;
+
+.nav-in-one {
     display: flex;
+    align-items: center;
     justify-content: center;
+}
+
+.nav-in-one-in {
+    /* background-color: red; */
+    padding: 0.5rem;
+    display: flex;
     align-items: center;
 }
-.nav-in-one-in{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.TreeImage{
-    height: 5vh;
+
+.TreeImage {
+    height: 3rem; 
+    margin-right: 1rem; 
 }
 .nav-in-two{
-    /* width: 50%; */
+    /* width: 30%; */
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 1rem;
 }
-.nav-in-three{
-    width: 20%;
+.nav-in-two p {
+    margin: 0 1.5rem;
+    cursor: pointer;
+}
+
+.nav-in-three {
     /* border: 2px solid red; */
-    padding: 0.5rem;
+    padding: 1rem;
+    width: 20%;
     display: flex;
+    gap: 1rem;
+    /* align-items: center; */
     justify-content: space-around;
-    align-items: center;
 }
-.nav-in-three button{
-    padding: 0.5rem;
-    border-radius: 10px;
+
+.nav-in-three button {
+    padding: 0.5rem ;
     background-color: green;
+    border-radius: 10px;
     color: white;
-    border: transparent;
+    width: 50%;
+    /* margin: 1rem; */
+}
+
+.nav-in-three button:hover {
+    background-color: lightgreen;
+    color: black;
 }
