@@ -1,39 +1,59 @@
-.mission-container{
-    /* border: 2px solid red; */
+.mission-container {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: green; */
     padding: 2rem;
+    opacity: 0;
+    transform: translateY(5rem);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+    background-color: #f9f9f9;
 }
-.mission-container-in{
-    width: 80%;
-    padding: 1rem;
+
+.mission-container.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.mission-container-in {
+    width: 90%;
+    /* max-width: 120rem; */
+    padding: 2rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    border-radius: 10px;
-    background-color: lightgreen;
+    border-radius: 1.2rem;
+    /* background-color: lightgreen; */
+    /* box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1); */
 }
-.missiontree{
-    height: 40vh;
+
+.missiontree {
+    height: auto;
+    max-height: 40vh;
+    width: auto;
+    border-radius: 0.8rem;
+    object-fit: cover;
 }
-.mission-container-in-one{
+
+.mission-container-in-one {
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.mission-container-in-two{
+
+.mission-container-in-two {
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.mission-container-in-two h3{
-    font-size: 1.4rem;
+
+.mission-container-in-two h3 {
+    font-size: 1.5rem;
     font-weight: 400;
-    color: #000;
+    color: #333;
     text-align: center;
+    line-height: 1.6;
+    margin: 0;
 }

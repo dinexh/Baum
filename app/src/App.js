@@ -30,13 +30,13 @@ function App() {
         <div className="App">
             {showNav && <Nav />}
             <Hero />
-            <Number 
+            {/* <Number 
                 targetEvents={40}
                 targetPlants={20}
                 targetTrees={10}
                 targetVillages={100}    
-            />
-            {/* <Mission /> */}
+            /> */}
+            <Mission />
             {/* <Contact /> */}
             <Footer />
         </div>
