@@ -15,7 +15,7 @@
 
 .latest-container-in {
     width: 100%;
-    /* padding: 2rem; */
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -53,7 +53,7 @@
 }
 
 .latest-container-main-in:hover {
-    animation-play-state: paused; /* Pause animation on hover */
+    animation-play-state: paused; 
 }
 
 .latest-container-main-box {
@@ -79,10 +79,10 @@
     align-items: center;
 }
 
-.latest-container-main-box:hover {
+/* .latest-container-main-box:hover {
     transform: translateY(-10px);
     box-shadow: 0 18px 36px rgba(0, 0, 0, 0.2);
-}
+} */
 
 .latest-container-main-box h1 {
     font-size: 1.75rem;

@@ -21,6 +21,13 @@ footer {
     margin: 1rem;
     min-width: 200px;
 }
+.footer-in-two{
+    gap: 4rem;
+}
+.footer-in-two a{
+    /* background-co÷lor: red; */
+}
+/* border: 2px solid red; */
 .footer-in-four h3{
     margin-left: 0.8rem;
 }
@@ -28,6 +35,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     text-align: center;
 }
 
@@ -62,7 +70,7 @@ footer {
 
 .footer-in-three p {
     margin: 0.5rem 0;
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: 300;
 }
 
@@ -75,7 +83,7 @@ footer {
     border-radius: 10px;
     transition: background-color 0.3s, color 0.3s;
     cursor: pointer;
-    width: 40%;
+    width: 50%;
     /* background-color: red; */
 }
 
