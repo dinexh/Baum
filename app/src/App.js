@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css';
 import Hero from './Components/Hero/hero';
 import Contact from './Components/Contact/Contact';
