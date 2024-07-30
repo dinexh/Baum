@@ -20,14 +20,14 @@ const Nav = ({ show }) => {
                         <p>Achievements</p>
                         <p>Latest</p>
                     </div>
-                    <div className="nav-in-three">
+                    {/* <div className="nav-in-three">
                         <button>
                             Donate
                         </button>
                         <button>
                             Join Us
                         </button>
-                    </div>
+                    </div> */}
                 </div>
             </nav>
         </header>

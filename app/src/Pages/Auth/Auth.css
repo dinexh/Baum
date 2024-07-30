@@ -1,0 +1,21 @@
+.auth-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.auth-container-in{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.auth-container-in-one{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.LoginImage{
+    height: 50vh;
+}

@@ -1,9 +1,15 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './hero.css';
 import HeroImage from "../../Assets/heroimage.jpeg";
 
 const Hero = () => {
+    const navigate = useNavigate();
+
+    const handleGetStarted = () => {
+        navigate('/Auth');
+    }
+
     return ( 
         <div className="home">
             <div className="home-in">
@@ -14,14 +20,12 @@ const Hero = () => {
                 </div>
                 <div className="home-in-button">
                     <div className="home-in-button-in">
-                        {/* <Link to="/login"> */}
-                            <p>Get Started</p>
-                        {/* </Link> */}
+                        <p onClick={handleGetStarted}> Get Started</p>
                     </div>
                 </div>
             </div>
         </div>
     );
 }
- 
+
 export default Hero;
