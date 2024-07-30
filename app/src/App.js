@@ -8,14 +8,14 @@ import Footer from './Components/Footer/footer';
 import Mission from './Components/mission/mission';
 
 function App() {
-    const [showNav, doShowNav] = useState(false);
+    const [showNav, setShowNav] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY > 100) {
-                doShowNav(true);
+                setShowNav(true);
             } else {
-                doShowNav(false);
+                setShowNav(false);
             }
         };
 
@@ -30,13 +30,14 @@ function App() {
         <div className="App">
             <Nav show={showNav} />
             <Hero />
-            <Latest />
-            <Number 
+            
+            {/* <Latest /> */}
+            {/* <Number 
                 targetEvents={40}
                 targetPlants={20}
                 targetTrees={10}
                 targetVillages={100}    
-            />
+            */}
             <Mission />
             <Footer />
         </div>

@@ -47,7 +47,7 @@ const Mission = () => {
         <div className={`mission-container ${isVisible ? 'visible' : ''}`} ref={missionRef}>
             <div className="mission-container-in">
                 <div className="mission-container-heading">
-                    <h1>Our <span className="highlight">Mission</span></h1>
+                   <h1>Our <span> Mission</span> </h1>
                 </div>
                 <div className="mission-matter">
                     <p>{content[currentContentIndex]}</p>

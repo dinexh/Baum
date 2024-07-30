@@ -1,13 +1,15 @@
-header{
+/* nav.css */
+header {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 nav {
     margin: 1rem;
     position: fixed;
-    top: 0;
+    top: -100px; 
     width: 80%;
     background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
@@ -15,8 +17,12 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding: 1rem; */
     border-radius: 40px;
+    transition: top 0.5s ease;
+}
+
+.nav.visible {
+    top: 0; 
 }
 
 .nav-in {
@@ -33,7 +39,6 @@ nav {
 }
 
 .nav-in-one-in {
-    /* background-color: red; */
     padding: 0.5rem;
     display: flex;
     align-items: center;
@@ -43,32 +48,30 @@ nav {
     height: 3rem; 
     margin-right: 1rem; 
 }
-.nav-in-two{
-    /* width: 30%; */
+
+.nav-in-two {
     display: flex;
 }
+
 .nav-in-two p {
     margin: 0 1.5rem;
     cursor: pointer;
 }
 
 .nav-in-three {
-    /* border: 2px solid red; */
     padding: 1rem;
     width: 20%;
     display: flex;
     gap: 1rem;
-    /* align-items: center; */
     justify-content: space-around;
 }
 
 .nav-in-three button {
-    padding: 0.5rem ;
+    padding: 0.5rem;
     background-color: green;
     border-radius: 10px;
     color: white;
     width: 50%;
-    /* margin: 1rem; */
 }
 
 .nav-in-three button:hover {
