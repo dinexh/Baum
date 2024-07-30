@@ -10,7 +10,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     padding: 40px;
     border-radius: 15px;
     width: 50%;
@@ -23,59 +23,76 @@
     opacity: 1;
     transform: translateY(0);
 }
-.mission-container-heading{
+
+.mission-container-heading {
     width: 100%;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* align-items: center; */
-    border: 2px solid red;
-    /* padding: 1rem; */
+    flex-direction: row; 
+    gap: 10px;
 }
-.mission-container-heading h1{
+
+.mission-container-heading h1 {
     font-size: 2.5rem;
+    display: inline; 
 }
-/* .mission-container-heading .highlight {
-    color: #27ae60;
-    text-decoration: underline;
-} */
-.mission-matter{
+
+.mission-container-heading h1 span {
+    background-color: #a7f3d0; 
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+.mission-matter {
     margin: 1rem;
     width: 100%;
-    border: 2px solid orange;
+    min-height: 20vh;
+    /* border: 2px solid orange; */
     padding: 0.8rem;
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
+
 .mission-matter p {
     text-align: center;
     font-size: 1.25em;
     font-weight: 400;
     color: black;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out; /* Smooth transition for opacity */
+    position: absolute;
+    margin: 0;
 }
 
-.mission-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+.mission-matter p.hidden {
+    opacity: 0;
 }
+
 
 .side-button {
-    background-color: #27ae60;
+    margin: 0.3rem;
     border: none;
-    color: #fff;
-    padding: 10px 20px;
+    color: black;
+    padding: 0.3rem;
+    border-radius: 10px;
+    /* padding: 10px 20px; */
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 18px;
     cursor: pointer;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     transition: background-color 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .side-button:hover {
-    background-color: #2ecc71;
+    background-color: black;
+    color: white
 }
 
 .side-button:focus {

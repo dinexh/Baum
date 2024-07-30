@@ -1,9 +1,31 @@
+import React, { useRef, useEffect } from 'react';
 import './objectives.css';
 import Object_Image from "../../Assets/EventImage.jpg";
 
 const Objectives = () => {
-    return (  
-        <div className="object-container">
+    const containerRef = useRef(null);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (containerRef.current) {
+                const containerTop = containerRef.current.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                if (containerTop < windowHeight) {
+                    containerRef.current.classList.add('visible');
+                } else {
+                    containerRef.current.classList.remove('visible');
+                }
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        handleScroll(); 
+
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
+    return (
+        <div className="object-container" ref={containerRef}>
             <div className="object-container-in">
                 <div className="object-heading">
                     <h1>What we <span>do?</span></h1>
@@ -14,7 +36,7 @@ const Objectives = () => {
                             <img src={Object_Image} className="BoxImage" alt="Modern farmer" />
                             <div className="box-matter">
                                 <h4>Promoting Afforestation</h4>
-                                <p> Encouraging students to initiate afforestation drives in urban and rural areas to combat deforestation and enhance green cover</p>
+                                <p>Encouraging students to initiate afforestation drives in urban and rural areas to combat deforestation and enhance green cover</p>
                             </div>
                             <div className="box-button">
                                 <button>→</button>
@@ -56,5 +78,5 @@ const Objectives = () => {
         </div>
     );
 }
- 
+
 export default Objectives;

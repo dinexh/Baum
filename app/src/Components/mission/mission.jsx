@@ -4,7 +4,7 @@ import './mission.css';
 const Mission = () => {
     const [isVisible, setIsVisible] = useState(false);
     const missionRef = useRef(null);
-    
+
     const [currentContentIndex, setCurrentContentIndex] = useState(0);
     const content = [
         "🌳 Planting a Greener Future: Join us in our mission to create a safer and healthier planet by planting trees across the globe. Every tree counts, and together, we can make a significant impact.",
@@ -47,7 +47,8 @@ const Mission = () => {
         <div className={`mission-container ${isVisible ? 'visible' : ''}`} ref={missionRef}>
             <div className="mission-container-in">
                 <div className="mission-container-heading">
-                   <h1>Our <span> Mission</span> </h1>
+                    <h1>Our</h1>
+                    <h1><span>Mission</span></h1>
                 </div>
                 <div className="mission-matter">
                     <p>{content[currentContentIndex]}</p>

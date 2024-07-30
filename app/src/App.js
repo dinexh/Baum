@@ -39,8 +39,8 @@ function App() {
                 targetTrees={10}
                 targetVillages={100}    
             */}
+            <Mission/>
             <Objectives/>
-            {/* <Mission /> */}
             <Footer />
         </div>
     );
