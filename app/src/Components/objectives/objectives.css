@@ -1,0 +1,108 @@
+.object-container {
+    /* min-height: 90vh; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.object-container-in {
+    width: 90%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.object-heading {
+    margin: 1rem;
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.object-heading h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.object-heading h1 span {
+    background-color: #a7f3d0; 
+    padding: 0 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.object-main {
+    width: 100%;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.object-boxes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 1rem; */
+    flex-wrap: wrap;
+}
+
+.object-box {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 20%;
+    margin: 1rem;
+    text-align: center;
+}
+.object-box:hover{
+    transition: 300ms ease-in-out;
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.BoxImage {
+    width: 100%;
+    height: auto;
+}
+
+.box-matter {
+    padding: 1rem;
+}
+
+.box-matter h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.box-matter p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.box-button {
+    padding: 1rem;
+}
+
+.box-button button {
+    background-color: #10b981; /* Button color */
+    border: none;
+    color: #fff;
+    padding: 0.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.box-button button:hover {
+    background-color: #059669;
+}

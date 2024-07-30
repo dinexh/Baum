@@ -5,6 +5,7 @@ import Nav from './Components/Nav/nav';
 import Latest from './Components/latest/latest';
 import Number from './Components/number/number';
 import Footer from './Components/Footer/footer';
+import Objectives from './Components/objectives/objectives';
 import Mission from './Components/mission/mission';
 
 function App() {
@@ -38,7 +39,8 @@ function App() {
                 targetTrees={10}
                 targetVillages={100}    
             */}
-            <Mission />
+            <Objectives/>
+            {/* <Mission /> */}
             <Footer />
         </div>
     );
