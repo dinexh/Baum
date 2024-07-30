@@ -1,13 +1,18 @@
 import React, { useState } from 'react';
-import LoginImage from "../../Assets/loginImage.svg";
+import { useNavigate } from 'react-router-dom';
 import LoginImage2 from "../../Assets/loginimage_2.svg";
 import './Auth.css';
 
 const Auth = () => {
-    const [isLogin, setIsLogin] = useState(false); // Default to login view
+    const [isLogin, setIsLogin] = useState(true);
+    const navigate = useNavigate();
 
     const toggleForm = () => {
         setIsLogin(!isLogin);
+    };
+
+    const handleBackHome = () => {
+        navigate('/'); 
     };
 
     return (
@@ -56,6 +61,7 @@ const Auth = () => {
                                 <p>Already have an account? <span onClick={toggleForm}>Login here</span></p>
                             </form>
                         )}
+                        <button onClick={handleBackHome} className="back-home-button">Back to Home</button>
                     </div>
                 </div>
             </div>
