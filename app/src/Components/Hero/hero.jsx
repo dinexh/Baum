@@ -17,7 +17,7 @@ const Hero = () => {
                 </div>
                 <div className="home-in-button">
                     <div className="home-in-button-in">
-                        <p onClick={handleGetStarted}> Get Started</p>
+                        <p>Denote Now!</p>
                     </div>
                 </div>
             </div>

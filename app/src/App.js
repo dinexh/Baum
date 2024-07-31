@@ -41,7 +41,7 @@ function App() {
                         <Footer />
                     </>
                 } />
-                <Route path="/Auth" element={<Auth />} />
+                /* <Route path="/Auth" element={<Auth />} /> */
                 <Route path = "/Blog" element={<Blog />} />
             </Routes>
         </div>
