@@ -67,7 +67,7 @@
 }
 
 .AuthImage {
-    height: 79vh;
+    height: 60vh;
     object-fit: contain;
     mix-blend-mode: multiply;
 }
