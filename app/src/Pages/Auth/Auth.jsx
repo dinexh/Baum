@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import './Auth.css';
 import Image from '../../Assets/auth/AuthIMage2.svg';
-import { toast, ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { Toaster, toast } from 'react-hot-toast';
+// import { toast, ToastContainer } from 'react-toastify';
+// import 'react-toastify/dist/ReactToastify.css';
 
 const Auth = () => {
     const [isLogin, setIsLogin] = useState(true);
@@ -52,7 +53,11 @@ const Auth = () => {
 
     return (
         <div className="auth-container">
-            <ToastContainer /> 
+            {/* <ToastContainer />  */}
+            <Toaster
+                position="top-center"
+                reverseOrder={false}
+            />
             <div className="auth-container-in">
                 <div className="auth-container-top">
                     <button onClick={handleBackHome} className="back-home-button">Back to Home</button>
@@ -103,6 +108,7 @@ const Auth = () => {
                 </div>
             </div>
         </div>
+        // document.cookie = "cookieName=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
     );
 };
 
