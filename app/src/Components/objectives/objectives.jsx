@@ -1,7 +1,8 @@
 import React, { useRef, useEffect } from 'react';
 import './objectives.css';
 import { objectives } from './data';
-import Object_Image from "../../Assets/EventImage.jpg";
+// import Object_Image from "../../Assets/Objectives_Images/Afforestation.jpg";
+// import Afforestation from "../../Assets/Objectives_Images/Afforestation.jpg";
 
 const Objectives = () => {
     const containerRef = useRef(null);

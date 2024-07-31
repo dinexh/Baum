@@ -1,5 +1,6 @@
 import React from 'react';
-import './blog.css'
+// import './Blog_footer.css';
+// import '../blog.css';
 const Blog_footer = () => {
     return ( 
        <div className="blog-footer">
