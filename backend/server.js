@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
-const mysql = require('mysql2');
+const mongoose = require('mongoose');
 
 const app = express();
 const port = 5001;
@@ -9,42 +9,50 @@ const port = 5001;
 app.use(cors()); // Enable CORS
 app.use(bodyParser.json());
 
-const db = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: '',
-  database: 'auth_db'
+// Connect to MongoDB
+mongoose.connect('mongodb://localhost:27017/auth_db', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+})
+.then(() => console.log('Connected to MongoDB.'))
+.catch(err => console.error('Could not connect to MongoDB.', err));
+
+// Define a User schema and model
+const userSchema = new mongoose.Schema({
+  name: String,
+  email: { type: String, unique: true },
+  password: String
 });
 
-db.connect((err) => {
-  if (err) throw err;
-  console.log('Connected to database.');
-});
+const User = mongoose.model('User', userSchema);
 
 app.get('/', (req, res) => {
   res.send('Server is running');
 });
 
-app.post('/api/login', (req, res) => {
+app.post('/api/login', async (req, res) => {
   const { email, password } = req.body;
-  const query = 'SELECT * FROM users WHERE email = ? AND password = ?';
-  db.query(query, [email, password], (err, results) => {
-    if (err) throw err;
-    if (results.length > 0) {
+  try {
+    const user = await User.findOne({ email, password });
+    if (user) {
       res.json({ success: true });
     } else {
       res.status(401).json({ success: false, message: 'Invalid email or password' });
     }
-  });
+  } catch (err) {
+    res.status(500).json({ success: false, message: 'Server error' });
+  }
 });
 
-app.post('/api/register', (req, res) => {
+app.post('/api/register', async (req, res) => {
   const { name, email, password } = req.body;
-  const query = 'INSERT INTO users (name, email, password) VALUES (?, ?, ?)';
-  db.query(query, [name, email, password], (err, results) => {
-    if (err) throw err;
+  try {
+    const newUser = new User({ name, email, password });
+    await newUser.save();
     res.json({ success: true });
-  });
+  } catch (err) {
+    res.status(500).json({ success: false, message: 'Server error' });
+  }
 });
 
 app.listen(port, () => {
