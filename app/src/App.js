@@ -31,10 +31,10 @@ function App() {
     return (
         <Router>
         <div className="App">
-            <Nav show={showNav} />
             <Routes>
                 <Route exact path="/" element={
                     <>
+                       <Nav show={showNav} />
                         <Hero />
                         <Mission />
                         <Objectives />
