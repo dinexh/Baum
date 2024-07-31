@@ -22,9 +22,6 @@ const BlogNav = () => {
                         </div>
                     </div>
                 </div>
-                <div className="header-image">
-                    <img src="https://cdn.prod.website-files.com/5f778340ed26b167bd087abe/634ac8b936d9ff52a6d3b395_leaves2%20mono.png" alt="Blog Visual" className='blog_image' />
-                </div>
             </div>
         </header>
     );
