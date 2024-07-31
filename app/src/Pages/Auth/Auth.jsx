@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import LoginImage2 from "../../Assets/loginimage_2.svg";
 import './Auth.css';
 
 const Auth = () => {
     const [isLogin, setIsLogin] = useState(true);
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
     const toggleForm = () => {
         setIsLogin(!isLogin);
     };
 
     const handleBackHome = () => {
-        navigate('/'); 
+        window.location.href = '/';
     };
 
     return (

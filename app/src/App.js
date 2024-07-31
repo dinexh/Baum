@@ -7,6 +7,7 @@ import Nav from './Components/Nav/nav';
 import Footer from './Components/Footer/footer';
 import Objectives from './Components/objectives/objectives';
 import Mission from './Components/mission/mission';
+import Blog from './Pages/blog/blog';
 
 function App() {
     const [showNav, setShowNav] = useState(false);
@@ -37,11 +38,12 @@ function App() {
                         <Hero />
                         <Mission />
                         <Objectives />
+                        <Footer />
                     </>
                 } />
                 <Route path="/Auth" element={<Auth />} />
+                <Route path = "/Blog" element={<Blog />} />
             </Routes>
-            {/* <Footer /> */}
         </div>
     </Router>
     );

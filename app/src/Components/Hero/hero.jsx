@@ -4,10 +4,8 @@ import './hero.css';
 import HeroImage from "../../Assets/heroimage.jpeg";
 
 const Hero = () => {
-    const navigate = useNavigate();
-
     const handleGetStarted = () => {
-        navigate('/Auth');
+        window.location.href = '/Auth';
     }
 
     return ( 
