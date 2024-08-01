@@ -9,7 +9,7 @@ const Blog = () => {
             <div className="blog-container-in">
             <BlogNav />
             <Blog_home />
-            {/* <BlogFooter /> */}
+            <BlogFooter />
             </div>
         </div>
     );
