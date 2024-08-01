@@ -9,6 +9,7 @@ import Footer from './Components/Footer/footer';
 import Objectives from './Components/objectives/objectives';
 import Mission from './Components/mission/mission';
 import Blog from './Pages/blog/blog';
+import Latest from './Components/latest/activity';
 
 function App() {
     const [showNav, setShowNav] = useState(false);
@@ -45,6 +46,9 @@ function App() {
                             <div id="objectives">
                                 <Objectives />
                             </div>
+                            <div id="latest">
+                                <Latest />
+                            </div>    
                             <Footer />
                     </>
                 } />
