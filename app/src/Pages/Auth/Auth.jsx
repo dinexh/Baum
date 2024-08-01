@@ -61,7 +61,10 @@ const Auth = () => {
             <div className="auth-container-in">
                 <div className="auth-container-top">
                     <button onClick={handleBackHome} className="back-home-button">Back to Home</button>
-                    <button>Help</button>
+                    <button
+                    
+                    
+                    >Help</button>
                 </div>
                 <div className="auth-main">
                     <div className="auth-container-in-one">
