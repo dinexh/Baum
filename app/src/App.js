@@ -35,11 +35,17 @@ function App() {
             <Routes>
                 <Route exact path="/" element={
                     <>
-                       <Nav show={showNav} />
-                        <Hero />
-                        <Mission />
-                        <Objectives />
-                        <Footer />
+                        <Nav show={showNav} />
+                            <div id="hero">
+                                <Hero />
+                            </div>
+                            <div id="mission">
+                                <Mission />
+                            </div>
+                            <div id="objectives">
+                                <Objectives />
+                            </div>
+                            <Footer />
                     </>
                 } />
                 /* <Route path="/Auth" element={<Auth />} /> */

@@ -1,6 +1,7 @@
 import React from 'react';
 import Tree from '../../Assets/tree.png';
 import './nav.css';
+import { Link } from 'react-scroll';
 
 const Nav = ({ show }) => {
     // const handleMission = () => {
@@ -19,16 +20,24 @@ const Nav = ({ show }) => {
                     <div className="nav-in-one">
                         <div className="nav-in-one-in">
                             <img className="TreeImage" src={Tree} alt="" />
+                            <Link to='hero' smooth={true} duration={600} >
                             <h1>Panchatantra</h1>
+                            </Link>
                         </div>
                     </div>
                     <div className="nav-in-two">
-                        <p>Our Mission</p>
-                        <p>What we do?</p>
-                        <p>Activities</p>
-                        {/* <p>Achievements</p> */}
-                        <p>Latest</p>
-                        {/* <p onClick={handleAuth()} >Get started</p> */}
+                    <Link to="mission" smooth={true} duration={600}>
+                            <p>Our Mission</p>
+                        </Link>
+                        <Link to="objectives" smooth={true} duration={600}>
+                            <p>What we do?</p>
+                        </Link>
+                        <Link to="activities" smooth={true} duration={600}>
+                            <p>Activities</p>
+                        </Link>
+                        <Link to="latest" smooth={true} duration={600}>
+                            <p>Latest</p>
+                        </Link>
                     </div>
                     {/* <div className="nav-in-three">
                         <button>
