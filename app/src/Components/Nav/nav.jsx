@@ -1,18 +1,10 @@
 import React from 'react';
 import Tree from '../../Assets/tree.png';
 import './nav.css';
-import { Link } from 'react-scroll';
+import { Link as ScrollLink } from 'react-scroll';
+import { Link as RouterLink } from 'react-router-dom';
 
 const Nav = ({ show }) => {
-    // const handleMission = () => {
-    //     window.location.href = '/#mission';
-    // }
-    // const handleObjective = () => {
-    //     window.location.href = '/#objectives';
-    // }
-    // const handleAuth = () => {
-    //     window.location.href = '/Auth';
-    // }
     return (
         <header>
             <nav className={`nav ${show ? 'visible' : ''}`}>
@@ -20,33 +12,25 @@ const Nav = ({ show }) => {
                     <div className="nav-in-one">
                         <div className="nav-in-one-in">
                             <img className="TreeImage" src={Tree} alt="" />
-                            <Link to='hero' smooth={true} duration={600} >
-                            <h1>Panchatantra</h1>
-                            </Link>
+                            <ScrollLink to='hero' smooth={true} duration={600}>
+                                <h1>Panchatantra</h1>
+                            </ScrollLink>
                         </div>
                     </div>
                     <div className="nav-in-two">
-                    <Link to="mission" smooth={true} duration={600}>
+                        <ScrollLink to="mission" smooth={true} duration={600}>
                             <p>Our Mission</p>
-                        </Link>
-                        <Link to="objectives" smooth={true} duration={600}>
+                        </ScrollLink>
+                        <ScrollLink to="objectives" smooth={true} duration={600}>
                             <p>What we do?</p>
-                        </Link>
-                        <Link to="activities" smooth={true} duration={600}>
+                        </ScrollLink>
+                        <ScrollLink to="activities" smooth={true} duration={600}>
                             <p>Activities</p>
-                        </Link>
-                        <Link to="latest" smooth={true} duration={600}>
-                            <p>Latest</p>
-                        </Link>
+                        </ScrollLink>
+                        <RouterLink id='navlink' to="/Auth">
+                            <p>Get started</p>
+                        </RouterLink>
                     </div>
-                    {/* <div className="nav-in-three">
-                        <button>
-                            Donate
-                        </button>
-                        <button>
-                            Join Us
-                        </button>
-                    </div> */}
                 </div>
             </nav>
         </header>
