@@ -1,8 +1,8 @@
-import Student from "../../Assets/Latest/Student_Engagement.jpg";
-import Tree from "../../Assets/Latest/Tree_Plantattion.jpg";
-import Water from "../../Assets/Latest/Water_Bidy.jpg";
-import Community from "../../Assets/Latest/Community.jpg";
-import Capacity from "../../Assets/Latest/Capacity_Building.jpg";
+import Student from "../Assets/Latest/Student_Engagement.jpg";
+import Tree from "../Assets/Latest/Tree_Plantattion.jpg";
+import Water from "../Assets/Latest/Water_Bidy.jpg";
+import Community from "../Assets/Latest/Community.jpg";
+import Capacity from "../Assets/Latest/Capacity_Building.jpg";
 
 export const Activity_data = [
     {

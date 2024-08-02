@@ -1,7 +1,7 @@
-import Afforestation from "../../Assets/Objectives_Images/Afforestation.jpg";
-import Water from "../../Assets/Objectives_Images/WaterConservation.jpg";
-import Bio from "../../Assets/Objectives_Images/BioDiversity.webp";
-import Climate from "../../Assets/Objectives_Images/Climate.jpg";
+import Afforestation from "../Assets/Objectives_Images/Afforestation.jpg";
+import Water from "../Assets/Objectives_Images/WaterConservation.jpg";
+import Bio from "../Assets/Objectives_Images/BioDiversity.webp";
+import Climate from "../Assets/Objectives_Images/Climate.jpg";
 
 export const objectives = [
     {
