@@ -1,6 +1,6 @@
 import React from 'react';
 import './blog.css';
-import { objectives } from '../../Components/objectives/data'; 
+import { objectives } from '../../Data/Objectives_data'; 
 
 const Blog_home = () => {
     return (  

@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import './objectives.css';
-import { objectives } from './data';
+import { objectives } from '../../Data/Objectives_data';
 // import Object_Image from "../../Assets/Objectives_Images/Afforestation.jpg";
 // import Afforestation from "../../Assets/Objectives_Images/Afforestation.jpg";
 

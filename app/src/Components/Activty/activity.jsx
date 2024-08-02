@@ -1,6 +1,6 @@
 import './activities.css'; 
 import React, { useRef, useEffect } from 'react';
-import { Activity_data } from './activity_data'; 
+import { Activity_data } from '../../Data/activity_data'; 
 
 const Activity = () => {
     const containerRef = useRef(null); 

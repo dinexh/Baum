@@ -1,6 +1,6 @@
 import React from 'react';
 import './blog.css'
-import { objectives } from '../../Components/objectives/data';
+import { objectives } from '../../Data/Objectives_data';
 
 const BlogNav = () => {
     const { title, author, image } = objectives[0]; // Using the first objective's data
