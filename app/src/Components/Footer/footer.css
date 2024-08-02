@@ -1,16 +1,17 @@
 footer {
-    background-color: #2e8b57; /* A darker green for a more elegant look */
+    background-color: #2e8b57; 
     color: white;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem 0;
+    padding: 2rem ;
 }
 
 .footer-in {
+    padding: 1rem;
     width: 90%;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -19,14 +20,12 @@ footer {
 .footer-in-one, .footer-in-two, .footer-in-three, .footer-in-four {
     flex: 1;
     margin: 1rem;
-    min-width: 200px;
+    /* min-width: 200px; */
 }
 .footer-in-two{
     gap: 4rem;
 }
-.footer-in-two a{
-    /* background-co÷lor: red; */
-}
+
 /* border: 2px solid red; */
 .footer-in-four h3{
     margin-left: 0.8rem;
