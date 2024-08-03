@@ -32,10 +32,10 @@ function App() {
     return (
         <Router>
             <div className="App">
-                <Nav show={showNav} />
                 <Routes>
                     <Route path="/" element={
                         <>
+                            <Nav show={showNav} />
                             <div id="hero">
                                 <Hero />
                             </div>
@@ -52,7 +52,7 @@ function App() {
                         </>
                     } />
                     <Route path="/Auth" element={<Auth />} />
-                    <Route path="/Blog" element={<Blog />} />
+                    <Route path="/blog/:id" element={<Blog />} />
                 </Routes>
             </div>
         </Router>

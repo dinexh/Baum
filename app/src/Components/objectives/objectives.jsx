@@ -1,14 +1,16 @@
 import React, { useRef, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';  // Import useNavigate
 import './objectives.css';
 import { objectives } from '../../Data/Objectives_data';
-// import Object_Image from "../../Assets/Objectives_Images/Afforestation.jpg";
-// import Afforestation from "../../Assets/Objectives_Images/Afforestation.jpg";
 
 const Objectives = () => {
     const containerRef = useRef(null);
-    const BlogPage = () => {
-        window.location.href = '/Blog';
+    const navigate = useNavigate();  // Initialize useNavigate hook
+
+    const handleBlogNavigation = (id) => {
+        navigate(`/blog/${id}`);  // Use navigate to redirect
     }
+
     useEffect(() => {
         const handleScroll = () => {
             if (containerRef.current) {
@@ -35,20 +37,20 @@ const Objectives = () => {
                     <h1>What we <span>do?</span></h1>
                 </div>
                 <div className="object-main">
-                        <div className="object-boxes">
-                            {objectives.map((objective) => (
-                                <div className="object-box" key={objective.id}>
-                                    <img src={objective.image} className="BoxImage" alt={objective.title} />
-                                    <div className="box-matter">
-                                        <h4>{objective.title}</h4>
-                                        <p>{objective.description}</p>
-                                    </div>
-                                    <div className="box-button">
-                                        <button onClick={BlogPage}>→</button>
-                                    </div>
+                    <div className="object-boxes">
+                        {objectives.map((objective) => (
+                            <div className="object-box" key={objective.id}>
+                                <img src={objective.image} className="BoxImage" alt={objective.title} />
+                                <div className="box-matter">
+                                    <h4>{objective.title}</h4>
+                                    <p>{objective.description}</p>
                                 </div>
-                            ))}
-                        </div>
+                                <div className="box-button">
+                                    <button onClick={() => handleBlogNavigation(objective.id)}>→</button>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </div>
