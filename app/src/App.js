@@ -9,6 +9,7 @@ import Objectives from './Components/objectives/objectives';
 import Mission from './Components/mission/mission';
 import Blog from './Pages/blog/blog';
 import Activity from './Components/Activty/activity';
+import Impact from './Components/impact/impact';
 
 function App() {
     const [showNav, setShowNav] = useState(false);
@@ -47,6 +48,9 @@ function App() {
                             </div>
                             <div id="activities">
                                 <Activity />
+                            </div>
+                            <div id="impact">
+                                <Impact />
                             </div>
                             <Footer />
                         </>
