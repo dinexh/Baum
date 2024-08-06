@@ -1,7 +1,7 @@
 const Impact = () => {
     return (
         <div className="impact-container">
-dvjdnjgknsdkvj
+          
         </div>
       );
 }
