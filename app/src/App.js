@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-// import Auth from './Pages/auth/auth';
-import Auth from './Pages/auth/auth';
+import Auth from './Pages/Auth/Auth';
 import Hero from './Components/Hero/hero';
 import Nav from './Components/Nav/nav';
 import Footer from './Components/Footer/footer';
@@ -11,6 +10,7 @@ import Mission from './Components/mission/mission';
 import Blog from './Pages/blog/blog';
 import Activity from './Components/Activty/activity';
 import Impact from './Components/impact/impact';
+import Activity_blog from './Pages/Activity_blog/actblog';
 
 function App() {
     const [showNav, setShowNav] = useState(false);
@@ -58,6 +58,8 @@ function App() {
                     } />
                     <Route path="/Auth" element={<Auth />} />
                     <Route path="/blog/:id" element={<Blog />} />
+                    {/* <Route path="/activities" element={<Activity />} /> */}
+                <Route path="/activity/:id" element={<Activity_blog/>} />
                 </Routes>
             </div>
         </Router>

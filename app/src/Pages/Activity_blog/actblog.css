@@ -1,0 +1,179 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.activity-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+.activity-nav {
+    width: 100%;
+    background-color: darkgreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.activity-nav p {
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.activity-nav p:hover {
+    color: black;
+}
+
+.activity-container-in {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.activity-container-heading {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem 0;
+    border-bottom: 2px solid green;
+    margin-bottom: 1rem;
+}
+
+.activity-container-heading h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.activity-container-heading h2 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.activity-container-heading p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.activity-container-main {
+    width: 100%;
+    margin-top: 2rem;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.activity-box {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s;
+    width: calc(33% - 20px);
+    margin: 10px;
+}
+
+.activity-box:hover {
+    transform: translateY(-5px);
+}
+
+.activity-image img {
+    width: 100%;
+    height: auto;
+}
+
+.activity-info {
+    padding: 15px;
+}
+
+.activity-info h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.activity-info p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.activity-learn {
+    padding: 10px 15px;
+    background: #007BFF;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.activity-learn p {
+    margin: 0;
+}
+
+.activity-learn:hover {
+    background: #0056b3;
+}
+
+.activity-footer {
+    padding: 1rem;
+    width: 100%;
+    background-color: darkgreen;
+    color: white;
+    text-align: center;
+}
+
+.activity-footer p {
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.activity-footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.activity-footer a:hover {
+    color: yellow;
+}
+
+.activity-footer span {
+    color: #4155ff;
+}
+
+.back-to-top {
+    width: 8%;
+    padding: 0.5rem;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: lightgreen;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.back-to-top:hover {
+    background-color: darkgreen;
+    transform: translateY(-5px);
+}
