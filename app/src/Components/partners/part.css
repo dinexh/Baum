@@ -53,5 +53,6 @@
 .com img {
     width: 90%;
     height: auto;
-    mix-blend-mode: multiply;
+    /* mix-blend-mode: multiply; */
+    /* background-color: red; */
 }
