@@ -1,1 +1,1 @@
-# Baum
+# Baum = **tree** (German)
