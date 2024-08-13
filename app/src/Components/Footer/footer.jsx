@@ -22,7 +22,7 @@ const Footer = () => {
                 </div>
                 <div className="footer-in-three">
                     <h3>Contact Us</h3>
-                    <p>K L S A C - Panchatantra</p>
+                    <p>KL SAC - Panchatantra</p>
                     <p>Green Fields, Vaddeswaram, Andhra Pradesh 522302</p>
                     <p>086453 50200</p>
                 </div>
@@ -48,11 +48,7 @@ const Footer = () => {
             </div>
             <div className="footer-in-lower">
                 <div className="footer-in-lower-one">
-                    <p>© 2021 KLSAC-Panchatantra. All Rights Reserved.</p>
-                </div>
-                <div className="footer-in-lower-two">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Use</a>
+                    <p>© 2024 KLSAC-Panchatantra. All Rights Reserved. | Designed and Developer by Dinesh Korukonda of ZeroOne Code Club</p>
                 </div>
             </div>
         </footer>

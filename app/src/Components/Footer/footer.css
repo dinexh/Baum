@@ -1,66 +1,60 @@
 footer {
-    background-color: #2e8b57; 
+    background-color: darkgreen;
     color: white;
     width: 100%;
+    padding: 2rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem ;
 }
-
 .footer-in {
-    padding: 1rem;
     width: 90%;
-    /* max-width: 1200px; */
+    max-width: 1200px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
 .footer-in-one, .footer-in-two, .footer-in-three, .footer-in-four {
     flex: 1;
     margin: 1rem;
-    /* min-width: 200px; */
+    min-width: 250px;
 }
-.footer-in-two{
-    gap: 4rem;
+.footer-in-four{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
-/* border: 2px solid red; */
 .footer-in-four h3{
-    margin-left: 0.8rem;
+    margin-bottom: 3rem;
 }
 .footer-in-one {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     text-align: center;
+}
+.FooterTree {
+    height: 150px;
+    margin-bottom: 1rem;
 }
 
 .footer-in-one h1 {
-    margin-top: 1rem;
-    font-size: 1.5rem;
-    font-weight: 300;
+    font-size: 1.8rem;
+    font-weight: 500;
 }
-
-.FooterTree {
-    height: 150px;
-}
-
 .footer-in-two h3, .footer-in-three h3, .footer-in-four h3 {
-    margin-bottom: 1rem;
     font-size: 1.5rem;
     font-weight: 500;
-    /* color: #2e8b57; */
+    margin-bottom: 1rem;
 }
-
 .footer-in-two a, .footer-in-four a {
     display: block;
     color: white;
     margin: 0.5rem 0;
     text-decoration: none;
-    transition: color 0.3s;
+    transition: color 0.3s ease;
 }
 
 .footer-in-two a:hover, .footer-in-four a:hover {
@@ -68,53 +62,49 @@ footer {
 }
 
 .footer-in-three p {
-    margin: 0.5rem 0;
-    font-size: 1.3rem;
+    margin: 0.3rem 0;
+    font-size: 1.1rem;
     font-weight: 300;
 }
-
 .four-icon {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    margin: 0.5rem 0;
+    margin: 0.5rem;
     padding: 0.5rem;
+    width: 48%;
     border-radius: 10px;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s ease;
     cursor: pointer;
-    width: 50%;
-    /* background-color: red; */
+    background-color: rgba(255, 255, 255, 0.1);
 }
-
 .four-icon:hover {
     background-color: green;
-    color: white;
 }
-
+.four-icon p {
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
 .footer-in-lower {
     width: 90%;
     max-width: 1200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin-top: 2rem;
     padding-top: 1rem;
     border-top: 1px solid white;
+    text-align: center;
 }
-
 .footer-in-lower-one p {
     font-size: 0.9rem;
     font-weight: 300;
 }
-
 .footer-in-lower-two a {
     margin-left: 1rem;
     color: white;
     text-decoration: none;
     font-size: 0.9rem;
-    transition: color 0.3s;
+    transition: color 0.3s ease;
 }
-
 .footer-in-lower-two a:hover {
     color: lightgreen;
 }
