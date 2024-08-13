@@ -11,6 +11,7 @@ import Blog from './Pages/blog/blog';
 import Activity from './Components/Activty/activity';
 import Impact from './Components/impact/impact';
 import Activity_blog from './Pages/Activity_blog/actblog';
+import Part from './Components/partners/part';
 
 function App() {
     const [showNav, setShowNav] = useState(false);
@@ -50,15 +51,14 @@ function App() {
                             <div id="activities">
                                 <Activity />
                             </div>
-                            <div id="impact">
-                                <Impact />
+                            <div id='part' >
+                                <Part/>
                             </div>
                             <Footer />
                         </>
                     } />
                     <Route path="/Auth" element={<Auth />} />
                     <Route path="/blog/:id" element={<Blog />} />
-                    {/* <Route path="/activities" element={<Activity />} /> */}
                 <Route path="/activity/:id" element={<Activity_blog/>} />
                 </Routes>
             </div>

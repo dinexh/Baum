@@ -5,10 +5,10 @@ import { objectives } from '../../Data/Objectives_data';
 
 const Objectives = () => {
     const containerRef = useRef(null);
-    const navigate = useNavigate();  // Initialize useNavigate hook
+    const navigate = useNavigate();  
 
     const handleBlogNavigation = (id) => {
-        navigate(`/blog/${id}`);  // Use navigate to redirect
+        navigate(`/blog/${id}`); 
     }
 
     useEffect(() => {
