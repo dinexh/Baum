@@ -1,5 +1,5 @@
 import React from 'react';
-import Tree from '../../Assets/Tree.png';
+// import Tree from '../../Assets/Tree.png';
 // import TreeImage from "../../Assets/Tree.png"
 import './nav.css';
 import { Link as ScrollLink } from 'react-scroll';
