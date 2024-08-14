@@ -1,7 +1,7 @@
 import KLU from '../Assets/partners/klu.jpg';
 import APF from '../Assets/partners/APF.jpeg';
 import IFS from "../Assets/partners/IFS.png";
-import SVR from '../Assets/Tree.png';
+import SVR from '../Assets/tree.png';
 import SAC from '../Assets/partners/SAC.jpeg';
 
 export const partdata = [

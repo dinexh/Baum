@@ -9,7 +9,7 @@ footer {
 }
 .footer-in {
     width: 90%;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -20,10 +20,10 @@ footer {
     min-width: 250px;
 }
 .footer-in-four{
-    /* border: 2px solid red; */
+    /* border: 2px solid white; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 .footer-in-four h3{
