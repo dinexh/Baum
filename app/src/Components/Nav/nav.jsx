@@ -1,6 +1,6 @@
 import React from 'react';
 import Tree from '../../Assets/Tree.png';
-import Tree2 from "../../Assets/Tree.png"
+import TreeImage from "../../Assets/Tree.png"
 import './nav.css';
 import { Link as ScrollLink } from 'react-scroll';
 import { Link as RouterLink } from 'react-router-dom';
@@ -12,7 +12,7 @@ const Nav = ({ show }) => {
                 <div className="nav-in">
                     <div className="nav-in-one">
                         <div className="nav-in-one-in">
-                            <img className="TreeImage" src={Tree2} alt="" />
+                            <img className="TreeImage" src={TreeImage} alt="" />
                             <ScrollLink to='hero' smooth={true} duration={600}>
                                 <h1>Panchatantra</h1>
                             </ScrollLink>
