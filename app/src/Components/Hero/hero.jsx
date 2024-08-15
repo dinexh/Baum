@@ -17,7 +17,7 @@ const Hero = () => {
                 </div>
                 <div className="home-in-button">
                     <div className="home-in-button-in">
-                        <p>Denote Now!</p>
+                        <p>Donate Now!</p>
                     </div>
                 </div>
             </div>
