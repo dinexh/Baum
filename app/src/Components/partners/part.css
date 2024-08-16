@@ -45,18 +45,39 @@
     margin-left: 10px;
 }
 
-.com-group {
+.com-group{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start; 
     align-items: center;
     width: 100%;
-    flex-wrap: wrap;
+    /* flex-wrap: nowrap;  */
+    overflow: hidden;
+
+    animation: scroll 10s linear infinite; 
+}
+
+.com-group-in {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+    align-items: center;
+    width: 100%;
+}
+
+@keyframes scroll {
+    to {
+        transform: translateX(-100%); /* Ensure this value is sufficient for continuous scroll */
+    }
+}
+
+.com-group:hover {
+    animation-play-state: paused;
 }
 
 .com {
     background-color: #fff;
-    width: 18%;
+    width: 40rem;
     margin: 0.5rem;
     border-radius: 8px;
     overflow: hidden;
