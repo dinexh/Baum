@@ -51,9 +51,6 @@
     justify-content: flex-start; 
     align-items: center;
     width: 100%;
-    /* flex-wrap: nowrap;  */
-    overflow: hidden;
-
     animation: scroll 10s linear infinite; 
 }
 

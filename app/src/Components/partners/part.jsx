@@ -19,6 +19,13 @@ const Part = () => {
                                 </div>
                             ))}
                         </div>
+                        <div className="com-group-in">
+                            {partdata.map((partner) => (
+                                <div className="com" key={partner.id}>
+                                    <img src={partner.img} alt={`Partner ${partner.id}`} />
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>
