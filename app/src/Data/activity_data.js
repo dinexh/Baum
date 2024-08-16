@@ -9,7 +9,7 @@ export const Activity_data = [
         id: 1,
         image: Student,
         title: "Student Engagement",
-        discription: "Educating and mobilizing students to participate actively in afforestation drives and water body establishment.",
+        discription: "Educating and mobilizing students to actively participate in afforestation drives and the establishment of water bodies for environmental impact.",
         blog_data: `
         In a world increasingly aware of environmental issues, saving plants has become more critical than ever. 
         Plants are the unsung heroes of our planet, providing oxygen, improving air quality, conserving water, and supporting wildlife. 
@@ -32,7 +32,7 @@ export const Activity_data = [
         id: 2,
         image: Community,
         title: "Community Participation",
-        discription: "Involving local communities in the planning and execution of forestry development projects, fostering a sense of ownership and responsibility.",
+        discription: "Involving local communities in planning and executing forestry development projects to foster a sense of ownership, responsibility, and sustainability.",
         blog_data: `
         Community involvement in forestry projects is essential for their success and sustainability. By engaging local communities, we ensure that the projects are relevant, 
         culturally appropriate, and supported by those who will benefit from them the most. Community participation helps in building a sense of ownership and responsibility, 
@@ -51,7 +51,7 @@ export const Activity_data = [
         id: 3,
         image: Tree,
         title: "Tree Plantation Drives",
-        discription: "Organizing large-scale tree plantation events in both urban and rural areas, targeting the planting of indigenous tree species.",
+        discription: "Organizing large-scale tree plantation events in urban and rural areas, focusing on planting indigenous tree species to improve air quality and enhance biodiversity.",
         blog_data: `
         Tree plantation drives are vital for combating deforestation, restoring degraded lands, and enhancing urban green spaces. By organizing large-scale tree planting events, we can make a significant impact 
         on the environment, improve air quality, and provide habitat for wildlife.
@@ -70,7 +70,7 @@ export const Activity_data = [
         id: 4,
         image: Water,
         title: "Water Body Creation",
-        discription: "Establishing ponds, lakes, and other water bodies within forest areas to recharge groundwater and enhance water availability.",
+        discription:"Establishing ponds, lakes, and other water bodies within forest areas to improve groundwater recharge, enhance water availability, and support local ecosystems.",
         blog_data: `
         Creating water bodies such as ponds, lakes, and wetlands within forested areas plays a crucial role in enhancing the health of ecosystems and supporting biodiversity. These water bodies help in recharging 
         groundwater, regulating local climates, and providing essential habitats for a variety of plant and animal species.

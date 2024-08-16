@@ -18,7 +18,6 @@
     transform: translateY(50px); 
 }
 
-/* This class is added when the element becomes visible */
 .visible .object-container-in {
     opacity: 1;
     transform: translateY(0); 
@@ -82,6 +81,7 @@
 .BoxImage {
     width: 100%;
     height: auto;
+    pointer-events: none;
 }
 
 .box-matter {

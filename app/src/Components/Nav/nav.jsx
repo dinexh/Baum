@@ -25,7 +25,7 @@ const Nav = ({ show }) => {
                         <ScrollLink to="objectives" smooth={true} duration={600}>
                             <p>What we do?</p>
                         </ScrollLink>
-                        <ScrollLink to="activities" smooth={true} duration={600}>
+                        <ScrollLink to="activity" smooth={true} duration={600}>
                             <p>Activities</p>
                         </ScrollLink>
                         <RouterLink id='navlink' to="/Auth">

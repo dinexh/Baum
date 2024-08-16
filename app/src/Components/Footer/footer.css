@@ -8,33 +8,23 @@ footer {
     align-items: center;
 }
 .footer-in {
-    width: 90%;
-    /* max-width: 1200px; */
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
-.footer-in-one, .footer-in-two, .footer-in-three, .footer-in-four {
-    flex: 1;
+
+.footer-in-one, .footer-in-two, .footer-in-three{
     margin: 1rem;
-    min-width: 250px;
 }
-.footer-in-four{
-    /* border: 2px solid white; */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-.footer-in-four h3{
-    margin-bottom: 3rem;
-}
+
 .footer-in-one {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
+
 .FooterTree {
     height: 150px;
     margin-bottom: 1rem;
@@ -44,11 +34,13 @@ footer {
     font-size: 1.8rem;
     font-weight: 500;
 }
+
 .footer-in-two h3, .footer-in-three h3, .footer-in-four h3 {
     font-size: 1.5rem;
     font-weight: 500;
     margin-bottom: 1rem;
 }
+
 .footer-in-two a, .footer-in-four a {
     display: block;
     color: white;
@@ -66,26 +58,11 @@ footer {
     font-size: 1.1rem;
     font-weight: 300;
 }
-.four-icon {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 0.5rem;
-    padding: 0.5rem;
-    width: 48%;
-    border-radius: 10px;
-    transition: background-color 0.3s ease;
-    cursor: pointer;
-    background-color: rgba(255, 255, 255, 0.1);
-}
+
 .four-icon:hover {
     background-color: green;
 }
-.four-icon p {
-    margin-left: 0.5rem;
-    font-size: 1rem;
-    font-weight: 400;
-}
+
 .footer-in-lower {
     width: 90%;
     max-width: 1200px;
@@ -107,4 +84,26 @@ footer {
 }
 .footer-in-lower-two a:hover {
     color: lightgreen;
+}
+
+.footer-in-four{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-in-four h3{
+    font-size: 2.4rem;
+    margin: 1rem;
+}
+
+.four-icon {
+    margin: .7rem;
+    padding: .5rem 1.5rem;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.1);
 }

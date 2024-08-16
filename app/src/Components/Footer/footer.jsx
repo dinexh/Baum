@@ -26,29 +26,25 @@ const Footer = () => {
                     <p>Green Fields, Vaddeswaram, Andhra Pradesh 522302</p>
                     <p>086453 50200</p>
                 </div>
+            </div>
                 <div className="footer-in-four">
                     <h3>Follow Us</h3>
                     <div className="four-icon">
                         <a href="#"><FontAwesomeIcon icon={faFacebook} /></a>
-                        <p>Facebook</p>
                     </div>
                     <div className="four-icon">
                         <a href="#"><FontAwesomeIcon icon={faInstagram} /></a>
-                        <p>Instagram</p>
                     </div>
                     <div className="four-icon">
                         <a href="#"><FontAwesomeIcon icon={faLinkedin} /></a>
-                        <p>Linkedin</p>
                     </div>
                     <div className="four-icon">
                         <a href="#"><FontAwesomeIcon icon={faTwitter} /></a>
-                        <p>Twitter</p>
                     </div>
-                </div>
             </div>
             <div className="footer-in-lower">
                 <div className="footer-in-lower-one">
-                    <p>© 2024 KLSAC-Panchatantra. All Rights Reserved. | Designed and Developer by Dinesh Korukonda and Pavan Karthik of ZeroOne Code Club</p>
+                    <p>© 2024 KLSAC-Panchatantra. All Rights Reserved. | Designed and Developer by Dinesh Korukonda and Pavan Karthik Garaga of ZeroOne Code Club</p>
                 </div>
             </div>
         </footer>
