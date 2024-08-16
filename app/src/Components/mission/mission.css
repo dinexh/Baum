@@ -10,18 +10,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* border: 2px solid blue; */
     padding: 40px;
     border-radius: 15px;
     width: 50%;
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-    opacity: 0;
-    transform: translateY(50px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(50px); /* Initially moved down */
 }
 
 .mission-container.visible .mission-container-in {
-    opacity: 1;
-    transform: translateY(0);
+    opacity: 1; /* Visible */
+    transform: translateY(0); /* Original position */
 }
 
 .mission-container-heading {
@@ -48,7 +47,6 @@
     margin: 1rem;
     width: 100%;
     min-height: 22vh;
-    /* border: 2px solid orange; */
     padding: 0.8rem;
     overflow: hidden; 
     display: flex;
@@ -63,7 +61,7 @@
     font-weight: 400;
     color: black;
     opacity: 1;
-    transition: opacity 0.5s ease-in-out; /* Smooth transition for opacity */
+    transition: opacity 0.5s ease-in-out;
     position: absolute;
     margin: 0;
 }
@@ -72,27 +70,24 @@
     opacity: 0;
 }
 
-
 .side-button {
     margin: 0.3rem;
     border: none;
     color: black;
     padding: 0.3rem;
     border-radius: 10px;
-    /* padding: 10px 20px; */
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 18px;
     cursor: pointer;
-    /* border-radius: 50%; */
     transition: background-color 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .side-button:hover {
     background-color: black;
-    color: white
+    color: white;
 }
 
 .side-button:focus {

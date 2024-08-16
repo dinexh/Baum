@@ -48,7 +48,7 @@ const Footer = () => {
             </div>
             <div className="footer-in-lower">
                 <div className="footer-in-lower-one">
-                    <p>© 2024 KLSAC-Panchatantra. All Rights Reserved. | Designed and Developer by Dinesh Korukonda of ZeroOne Code Club</p>
+                    <p>© 2024 KLSAC-Panchatantra. All Rights Reserved. | Designed and Developer by Dinesh Korukonda and Pavan Karthik of ZeroOne Code Club</p>
                 </div>
             </div>
         </footer>

@@ -1,9 +1,9 @@
 .object-container {
     width: 100%;
-    /* min-height: 500px;  */
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 4rem;
 }
 
 .object-container-in {
@@ -16,10 +16,10 @@
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
     opacity: 0; 
     transform: translateY(50px); 
-    margin-bottom: 4rem;
 }
 
-.object-container.visible .object-container-in {
+/* This class is added when the element becomes visible */
+.visible .object-container-in {
     opacity: 1;
     transform: translateY(0); 
 }
@@ -49,9 +49,9 @@
 
 .object-main {
     width: 100%;
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .object-boxes {
@@ -59,8 +59,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* gap: 1rem; */
     flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .object-box {
@@ -71,9 +71,10 @@
     width: 20%;
     margin: 1rem;
     text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
-.object-box:hover{
-    transition: 300ms ease-in-out;
+
+.object-box:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
