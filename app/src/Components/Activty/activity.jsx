@@ -1,9 +1,8 @@
-// src/components/Activity/Activity.jsx
 import './activities.css'; 
 import React, { useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Activity_data } from '../../Data/activity_data'; 
-import VisibleOnScroll from '../Loaders/VisibleOnScroll'; // Import the VisibleOnScroll component
+import VisibleOnScroll from '../Loaders/VisibleOnScroll';
 
 const Activity = () => {
     const containerRef = useRef(null); 
@@ -24,7 +23,7 @@ const Activity = () => {
                                 </div>
                                 <div className="activity-info">
                                     <h1>{item.title}</h1>
-                                    <p>{item.description}</p> 
+                                    <p>{item.discription}</p> 
                                 </div>
                                 <div className="activity-learn">
                                     <p>Learn More</p>
