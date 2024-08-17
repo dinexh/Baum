@@ -9,7 +9,7 @@ import Objectives from './Components/objectives/objectives';
 import Mission from './Components/mission/mission';
 import Blog from './Pages/blog/blog';
 import Activity from './Components/Activty/activity';
-import Impact from './Components/impact/impact';
+import News from './Components/newsletter/news';
 import Activity_blog from './Pages/Activity_blog/actblog';
 import Part from './Components/partners/part';
 import VisibleOnScroll from './Components/Loaders/VisibleOnScroll';
@@ -45,6 +45,7 @@ const App = () => {
                             <VisibleOnScroll className="objectives"><Objectives /></VisibleOnScroll>
                             <VisibleOnScroll className="activity"><Activity /></VisibleOnScroll>
                             <VisibleOnScroll className="part"><Part /></VisibleOnScroll>
+                            <VisibleOnScroll className="NewsLetter"><News/></VisibleOnScroll>
                             <VisibleOnScroll className="footer"><Footer /></VisibleOnScroll>
                         </>
                     } />
