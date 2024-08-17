@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import VisibleOnScroll from '../Loaders/VisibleOnScroll'; // Adjusted import path
+import VisibleOnScroll from '../Loaders/VisibleOnScroll'; 
 import './mission.css';
 
 const Mission = () => {

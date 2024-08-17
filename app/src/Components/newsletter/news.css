@@ -10,6 +10,13 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    opacity: 0; 
+    transform: translateY(50px); 
+}
+.news-container.visible .news-container-in{
+    opacity: 1; 
+    transform: translateY(0);
 }
 .news-container-in-one{
     width: 50%;
@@ -45,7 +52,6 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* border:2px solid red; */
     padding: 1rem;
     background-color: green;
 }
@@ -58,7 +64,6 @@
     font-size: 0.8rem;
 }
 .newsletter-form button{
-    /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
     border-radius: 5px;
     margin-left: 0.3rem;
     background-color: green;
