@@ -1,8 +1,8 @@
 import React from 'react';
 import './footer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import Tree from "../../Assets/tree.png";
-// import Tree from '../../Assets/Tree.png';
+import Logo from "../../Assets/Panchatantra_log.png";
+
 import { faFacebook, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
@@ -10,7 +10,7 @@ const Footer = () => {
         <footer>
             <div className="footer-in">
                 <div className="footer-in-one">
-                    {/* <img src= className='FooterTree' alt="Tree Footer" /> */}
+                    <img src= {Logo} className='Logo' alt="Tree Footer" />
                     <h1>KLSAC-Panchatantra</h1>
                 </div>
                 <div className="footer-in-two">
