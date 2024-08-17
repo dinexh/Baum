@@ -14,13 +14,13 @@
     border-radius: 15px;
     width: 50%;
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-    opacity: 0; /* Initially hidden */
-    transform: translateY(50px); /* Initially moved down */
+    opacity: 0; 
+    transform: translateY(50px); 
 }
 
 .mission-container.visible .mission-container-in {
-    opacity: 1; /* Visible */
-    transform: translateY(0); /* Original position */
+    opacity: 1; 
+    transform: translateY(0); 
 }
 
 .mission-container-heading {

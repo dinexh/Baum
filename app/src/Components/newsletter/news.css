@@ -10,7 +10,16 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    opacity: 0; 
+    transform: translateY(50px); 
 }
+
+.news-container.visible .news-container-in{
+    opacity: 1; 
+    transform: translateY(0);
+}
+
 .news-container-in-one{
     width: 50%;
     display: flex;

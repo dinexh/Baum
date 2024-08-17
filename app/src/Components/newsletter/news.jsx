@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Mail from "../../Assets/Mail.avif";
+import VisibleOnScroll from '../Loaders/VisibleOnScroll'; 
 import './news.css';
 
 const News = () => {
@@ -18,7 +19,7 @@ const News = () => {
     };
 
     return (  
-        <div className="news-container">
+        <VisibleOnScroll className="news-container">
             <div className="news-container-in">
                 <div className="news-container-in-one">
                     <img src={Mail} className="mailImage" alt="Newsletter Icon"/>
@@ -48,7 +49,7 @@ const News = () => {
                     )}
                 </div>
             </div> 
-        </div>
+        </VisibleOnScroll>
     );
 }
 
