@@ -55,13 +55,37 @@
     background-color: lightgreen;
     border: none;
     border-radius: 5px;
+    font-size: 0.8rem;
 }
 .newsletter-form button{
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
     border-radius: 5px;
     margin-left: 0.3rem;
     background-color: green;
     padding: 0.5rem;
     color: white;
     border: none;
+}
+.toaster {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background-color: green;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    font-size: 16px;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 20px; opacity: 1;}
+}
+
+@keyframes fadeout {
+    from {bottom: 20px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
 }
