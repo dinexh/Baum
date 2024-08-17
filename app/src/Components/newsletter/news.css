@@ -58,10 +58,16 @@
 .newsletter-form input{
     padding: 1rem;
     width: 100%;
-    background-color: lightgreen;
+    background-color: green;
     border: none;
     border-radius: 5px;
     font-size: 0.8rem;
+    color: white;
+}
+.newsletter-form input::placeholder{
+    color: white;
+    font-size: 0.8rem;
+    border: lightgreen;
 }
 .newsletter-form button{
     border-radius: 5px;
