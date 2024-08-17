@@ -88,7 +88,7 @@ export const Activity_data = [
         id: 5,
         image: Capacity,
         title: "Capacity Building",
-        discription: "Conducting workshops, training programs, and awareness campaigns to impart knowledge about forestry management and water conservation techniques.",
+        discription: "Conducting workshops, training programs, and awareness campaigns to impart knowledge about forestry management and water conservation techniques. lorem lorem lorem",
         blog_data: `
         Capacity building is a fundamental aspect of effective forestry management and water conservation. By conducting workshops, training programs, and awareness campaigns, we can equip individuals and communities 
         with the knowledge and skills needed to manage natural resources sustainably.

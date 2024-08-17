@@ -62,7 +62,7 @@ export const objectives = [
             name: "Jane Doe",
         },
         title: "Biodiversity Conservation",
-        description: "Creating diverse forest ecosystems to preserve biodiversity and provide habitats for various plant and animal species.",
+        description: "Creating diverse forest ecosystems to preserve biodiversity and provide habitats for various plant",
         image: Bio,
         blog_data: `
         In a world increasingly aware of environmental issues, saving plants has become more critical than ever. 
