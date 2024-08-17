@@ -8,7 +8,7 @@ import { Toaster, toast } from 'react-hot-toast';
 // import 'react-toastify/dist/ReactToastify.css';
 
 const Auth = () => {
-    const [isLogin, setIsLogin] = useState(true);
+    const [isLogin, setIsLogin] = useState(false);
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [name, setName] = useState('');
@@ -104,7 +104,7 @@ const Auth = () => {
                     </div>
                 </div>
                 <div className="auth-container-footer">
-                    <p>© 2021 KLSAC-Panchatantra. All Rights Reserved.</p>
+                    <p>© 2024 KLSAC-Panchatantra. All Rights Reserved.</p>
                 </div>
             </div>
         </div>
