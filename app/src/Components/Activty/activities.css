@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .activity-container-in {
     width: 100%;
     padding: 1rem;
@@ -11,27 +12,40 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateY(50px); 
 }
+
+.visible .activity-container-in {
+    opacity: 1;
+    transform: translateY(0); 
+}
+
 .activity-container-heading {
     width: 100%;
     text-align: center;
     margin: 1rem;
 }
-.activity-container-heading h1{
+
+.activity-container-heading h1 {
     font-size: 2rem;
     margin-bottom: 0.5rem;
 }
-.activity-container-heading span{
+
+.activity-container-heading span {
     background-color: #a7f3d0; 
     padding: 0 10px;
     border-radius: 5px;
 }
+
 .activity-container-main {
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
+
 .activity-box {
     width: 22%;
     margin: 1rem;
@@ -42,31 +56,43 @@
     align-items: center;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
+
 .activity-box:hover {
-    transition: 300ms ease-in-out;
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+
 .activity-image img {
     width: 100%;
     height: auto;
     display: block;
+    object-fit: cover;
+    pointer-events: none;
 }
+
+.activity-image{
+    overflow: hidden;
+    aspect-ratio: 16/9;
+}
+
 .activity-info {
     padding: 1rem;
-    /* border: 2px solid #a7f3d0; */
 }
+
 .activity-info h1 {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
 }
+
 .activity-info p {
     font-size: 1rem;
     font-weight: 400;
     color: #666;
 }
+
 .activity-learn {
     padding: 0.3rem;
     width: 100%;
@@ -74,11 +100,12 @@
     margin: 0.3rem;
     cursor: pointer;
 }
+
 .activity-learn p {
     font-size: 1rem;
     font-weight: 400;
 }
+
 .activity-learn p:hover {
     color: green;
-    cursor: pointer;
 }

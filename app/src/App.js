@@ -12,8 +12,9 @@ import Activity from './Components/Activty/activity';
 import Impact from './Components/impact/impact';
 import Activity_blog from './Pages/Activity_blog/actblog';
 import Part from './Components/partners/part';
+import VisibleOnScroll from './Components/Loaders/VisibleOnScroll';
 
-function App() {
+const App = () => {
     const [showNav, setShowNav] = useState(false);
 
     useEffect(() => {
@@ -39,27 +40,17 @@ function App() {
                     <Route path="/" element={
                         <>
                             <Nav show={showNav} />
-                            <div id="hero">
-                                <Hero />
-                            </div>
-                            <div id="mission">
-                                <Mission />
-                            </div>
-                            <div id="objectives">
-                                <Objectives />
-                            </div>
-                            <div id="activities">
-                                <Activity />
-                            </div>
-                            <div id='part' >
-                                <Part/>
-                            </div>
-                            <Footer />
+                            <VisibleOnScroll className="hero"><Hero /></VisibleOnScroll>
+                            <VisibleOnScroll className="mission"><Mission /></VisibleOnScroll>
+                            <VisibleOnScroll className="objectives"><Objectives /></VisibleOnScroll>
+                            <VisibleOnScroll className="activity"><Activity /></VisibleOnScroll>
+                            <VisibleOnScroll className="part"><Part /></VisibleOnScroll>
+                            <VisibleOnScroll className="footer"><Footer /></VisibleOnScroll>
                         </>
                     } />
-                    <Route path="/Auth" element={<Auth />} />
-                    <Route path="/blog/:id" element={<Blog />} />
-                <Route path="/activity/:id" element={<Activity_blog/>} />
+                    <Route path="/Auth" element={<VisibleOnScroll className="auth"><Auth /></VisibleOnScroll>} />
+                    <Route path="/blog/:id" element={<VisibleOnScroll className="blog"><Blog /></VisibleOnScroll>} />
+                    <Route path="/activity/:id" element={<VisibleOnScroll className="activityBlog"><Activity_blog /></VisibleOnScroll>} />
                 </Routes>
             </div>
         </Router>

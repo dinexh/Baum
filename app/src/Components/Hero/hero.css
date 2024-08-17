@@ -21,6 +21,7 @@
 .home-in img{
     /* width: 100%; */
     height: 20vh;
+    pointer-events: none;
 }
 .home-in-text{
     /* width: 40%; */

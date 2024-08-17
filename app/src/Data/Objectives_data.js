@@ -36,7 +36,7 @@ export const objectives = [
             name: "Jane Doe",
         },
         title: "Water Conservation",
-        description: "Establishing water bodies alongside forestries to improve groundwater levels, ensuring water security and mitigating the effects of drought.",
+        description: "Establishing water bodies alongside forests to boost groundwater levels, ensure water security, and combat drought",
         image: Water,
         blog_data: `
         In a world increasingly aware of environmental issues, saving plants has become more critical than ever. 

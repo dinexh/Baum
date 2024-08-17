@@ -3,7 +3,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
 }
+
 .partner-container-in {
     width: 100%;
     padding: 1rem;
@@ -11,48 +13,79 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-    opacity: 0; 
-    transform: translateY(50px); 
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateY(50px);
+    overflow: hidden;
 }
-.partner-container.visible .partner-container-in {
+
+.visible .partner-container-in {
     opacity: 1;
-    transform: translateY(0); 
+    transform: translateY(0);
 }
+
 .partner-container-heading {
+    width: 100%;
+    text-align: center;
     margin: 1rem;
     padding: 1rem;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
+
 .partner-container-heading h1 {
     font-size: 2rem;
     font-weight: bold;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
+
 .partner-container-heading h1 span {
     background-color: #a7f3d0;
     padding: 0 10px;
     border-radius: 5px;
-    margin: 0.5rem;
+    margin-left: 10px;
 }
-.com-group {
+
+.com-group{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start; 
+    align-items: center;
+    width: 100%;
+    animation: scroll 10s linear infinite; 
+}
+
+.com-group-in {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
     align-items: center;
     width: 100%;
 }
+
+@keyframes scroll {
+    to {
+        transform: translateX(-100%); /* Ensure this value is sufficient for continuous scroll */
+    }
+}
+
+.com-group:hover {
+    animation-play-state: paused;
+}
+
 .com {
     background-color: #fff;
-    width: 18%;
+    width: 40rem;
+    margin: 0.5rem;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .com img {
     width: 90%;
     height: auto;
-    /* mix-blend-mode: multiply; */
-    /* background-color: red; */
+    display: block;
 }
