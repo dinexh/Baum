@@ -52,27 +52,34 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 1rem;
-    background-color: green;
+    /* padding: 1rem; */
+    /* background-color: green; */
+    border: 2px solid green;
 }
 .newsletter-form input{
     padding: 1rem;
     width: 100%;
-    background-color: green;
     border: none;
     border-radius: 5px;
+    border: 1px solid lightgray;
     font-size: 0.8rem;
-    color: white;
+    color: black;
+    transition: border 0.3s ease; 
 }
 .newsletter-form input::placeholder{
-    color: white;
+    color: black;
     font-size: 0.8rem;
-    border: lightgreen;
 }
+.newsletter-form input:focus{
+    border: 2px solid green;
+    outline: none;
+}
+
 .newsletter-form button{
     border-radius: 5px;
-    margin-left: 0.3rem;
+    /* margin-left: 0.3rem; */
     background-color: green;
+    min-height: 6vh;
     padding: 0.5rem;
     color: white;
     border: none;
