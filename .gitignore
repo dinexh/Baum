@@ -3,3 +3,4 @@ app/node_modules/.cache/*
 backend/node_modules
 .DS_Store
 app/node_modules/.cache/
+app/node_modules/.cache/default-development/index.pack
